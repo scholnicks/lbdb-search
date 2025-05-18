@@ -8,6 +8,13 @@
     <!-- Favicon reference -->
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Book Search App">
+    <meta property="og:description" content="Search for your favorite books by title or author.">
+    <meta property="og:image" content="{{ url_for('static', filename='favicon.png', _external=True) }}">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:type" content="website">
+
 	<style>
         body {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
