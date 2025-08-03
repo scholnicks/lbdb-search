@@ -1,0 +1,9 @@
+# vi: set syntax=yaml ts=4 sw=4 sts=4 et ff=unix ai si :
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - poetry run python flask_app.py
+

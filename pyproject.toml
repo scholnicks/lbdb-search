@@ -1,0 +1,22 @@
+# vi: set syntax=toml ts=4 sw=4 sts=4 et ff=unix ai si :
+
+[project]
+name = "lbdb-search"
+version = "0.1.0"
+description = ""
+authors = [
+    {name="Steve Scholnick", email="scholnicks@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask (>=3.1.1,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
