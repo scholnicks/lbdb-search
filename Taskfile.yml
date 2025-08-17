@@ -4,6 +4,20 @@ version: '3'
 
 tasks:
   default:
+    desc: Runs the flask app
+    silent: true
     cmds:
       - poetry run python flask_app.py
+
+  activate:
+    desc: Activates the virtual environment
+    silent: true
+    cmds:
+      - source .venv/bin/activate
+
+  deactivate:
+    desc: Deactivates the virtual environment
+    silent: true
+    cmds:
+      - deactivate
 
