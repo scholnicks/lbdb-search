@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # vi: set syntax=python ts=4 sw=4 sts=4 et ff=unix ai si :
 
-from flask import Flask, g, request, render_template
-import sqlite3
 import os
+import sqlite3
+
+from flask import Flask, g, render_template, request
 
 app = Flask(__name__)
 
