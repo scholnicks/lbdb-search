@@ -2,7 +2,7 @@
 
 [project]
 name = "lbdb-search"
-version = "0.1.0"
+version = "0.2.0"
 description = "LBDB online search"
 authors = [
     {name="Steve Scholnick", email="scholnicks@gmail.com"}
