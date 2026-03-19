@@ -8,11 +8,15 @@
     <!-- Favicon reference -->
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
 
+    <!-- Apple Mobile Web App -->
+    <meta name="apple-mobile-web-app-title" content="LBDB Book Search">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Book Search App">
     <meta property="og:description" content="Search for your favorite books by title or author.">
     <meta property="og:image" content="{{ url_for('static', filename='favicon.png', _external=True) }}">
-    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:url" content="https://scholnicks.pythonanywhere.com/">
     <meta property="og:type" content="website">
 
 	<style>
