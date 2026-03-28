@@ -7,5 +7,5 @@ tasks:
     desc: Runs the flask app
     silent: true
     cmds:
-      - poetry run python flask_app.py
+      - uv run python flask_app.py
 
