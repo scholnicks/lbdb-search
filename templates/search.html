@@ -129,8 +129,8 @@
             {% if results %}
                 <h2>Results:</h2>
                 <ul>
-                    {% for title, author in results %}
-                        <li><strong>{{ title }}</strong> by {{ author }}</li>
+                    {% for title, author, media in results %}
+                        <li><strong>{{ title }}</strong> by {{ author }}, <i>{{ media }}</i></li>
                     {% endfor %}
                 </ul>
             {% elif request.method == "POST" %}

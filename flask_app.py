@@ -12,8 +12,16 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATABASE = os.path.join(BASE_DIR, "lbdb.db")
 
 SQL = """
-    select book_title,auth_name  from v_search
-    WHERE book_title LIKE ? OR auth_name LIKE ?
+    select
+        s.book_title, s.auth_name, m.med_desc as "media"
+    from
+        v_search s
+    join
+        media_type m on m.med_id=s.med_id
+    where
+        s.book_title like ? or s.auth_name like ?
+    order by
+    s.book_title, s.auth_name
 """
 
 
