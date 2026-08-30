@@ -1,6 +1,6 @@
 [project]
 name = "lbdb-search"
-version = "0.4.0"
+version = "0.4.1"
 description = "LBDB online search"
 authors = [{ name = "Steve Scholnick", email = "scholnicks@gmail.com" }]
 requires-python = "==3.13.*"
